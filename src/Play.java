@@ -9,7 +9,7 @@ public class Play {
         Random generator = new Random();
         int counter = 0;
         while(counter < 5){
-            int aBall = generator.nextInt(69) + 1;
+            var aBall = generator.nextInt(69) + 1;
             if(isNotDuplicate(aBall,counter)){
                 whiteballs[counter] = aBall;
                 counter++;
@@ -23,7 +23,7 @@ public class Play {
     }
 
     private boolean isNotDuplicate(int whiteball, int currentNumberOfBalls){
-        boolean result = true;
+        var result = true;
         for(int counter = 0 ; counter < currentNumberOfBalls; counter++){
             if(whiteball == whiteballs[counter])
                 result = false;
@@ -31,7 +31,7 @@ public class Play {
         return result;
     }
     public String toString(){
-        StringBuilder stringBuilder = new StringBuilder();
+        var stringBuilder = new StringBuilder();
         stringBuilder.append("Whiteballs : ");
         stringBuilder.append(Arrays.toString(whiteballs));
         stringBuilder.append(" PowerBall: ");
