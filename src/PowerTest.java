@@ -11,5 +11,13 @@ public class PowerTest {
         System.out.println("How many plays do you want to ?");
         int numbersOfPlays = scanner.nextInt();
         currentTerminal.generateTickets(numbersOfPlays);
+        scanner.nextLine();
+        System.out.println("Check the Validation of Tickets~");
+        System.out.println("Which terminal do you buy? ( a or b )");
+        terminalUsed = scanner.nextLine();
+        currentTerminal = terminalUsed.equalsIgnoreCase("a")? terminal1 : terminal2;
+        System.out.println("Please enter you Ticket#:");
+        String ticketNumber = scanner.nextLine();
+        System.out.println("You code is " + (currentTerminal.ticketValidate(ticketNumber)?"Valid.":"Invalid."));
     }
 }
