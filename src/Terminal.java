@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Terminal {
-    private static int nextTicketId = 0;
     private String terminalID;
     private double sales;
     private int ticketsSize = 100;
