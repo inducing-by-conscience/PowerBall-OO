@@ -19,5 +19,6 @@ public class PowerTest {
         System.out.println("Please enter you Ticket#:");
         String ticketNumber = scanner.nextLine();
         System.out.println("You code is " + (currentTerminal.ticketValidate(ticketNumber)?"Valid.":"Invalid."));
+        System.out.println("Haha See ya");
     }
 }
