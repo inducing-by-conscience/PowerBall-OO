@@ -22,7 +22,7 @@ public class Ticket {
     }
 
     public String toString(){
-        StringBuilder stringBuilder = new StringBuilder();
+        var stringBuilder = new StringBuilder();
         stringBuilder.append(" Ticket#: ");
         stringBuilder.append(ticketsID);
         stringBuilder.append(" Terminal#: ");
