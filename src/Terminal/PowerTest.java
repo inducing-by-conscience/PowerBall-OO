@@ -1,5 +1,12 @@
+package Terminal;
+
 import java.util.Scanner;
 
+/**
+ * Tester for the program
+ * @author jinjiantan
+ *
+ */
 public class PowerTest {
     public static void main(String[] args){
         Terminal terminal1 = new Terminal("a001");
@@ -19,6 +26,6 @@ public class PowerTest {
         System.out.println("Please enter you Ticket#:");
         String ticketNumber = scanner.nextLine();
         System.out.println("You code is " + (currentTerminal.ticketValidate(ticketNumber)?"Valid.":"Invalid."));
-        System.out.println("See You next time!");
+        System.out.println("See You next time!ß");
     }
 }
